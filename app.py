@@ -55,7 +55,8 @@ else:
     
     for kitab in daftar_kitab:
         with st.expander(f"📚 {kitab['nama']} — ({kitab['bidang']})"):
-            st.write(**Penulis:** {kitab['penulis']})
+            # Perbaikan sintaks f-string di bawah ini:
+            st.write(f"**Penulis:** {kitab['penulis']}")
             st.write(f"**Deskripsi Formalisme:** {kitab['deskripsi']}")
             
             # Simulasi Fitur Analisis AI / Ekstraksi Zuhri Formalism
